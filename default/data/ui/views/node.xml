@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<view template="splunk_app_jenkins:/templates/node.html" type="html">
+	<label>Jenkins Node</label>
+</view>

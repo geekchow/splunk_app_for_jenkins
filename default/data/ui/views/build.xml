@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<view template="splunk_app_jenkins:/templates/build.html" type="html">
+	<label>Build Analysis</label>
+</view>

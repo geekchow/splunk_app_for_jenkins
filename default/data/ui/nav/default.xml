@@ -1,0 +1,13 @@
+<nav color="#3c444d">
+    <view name="overview" vmode="admin"/>
+    <view name="build" default="true"/>
+    <view name="job"/>
+    <view name="testAnalysis"/>
+    <view name="audit" vmode="admin"/>
+    <view name="health" vmode="admin"/>
+    <view name="node" vmode="admin"/>
+    <view name="panel"/>
+    <view name="configuration" vmode="admin"/>
+    <view name="alerts" vmode="admin"/>
+    <view name="search" vmode="all"/>
+</nav>

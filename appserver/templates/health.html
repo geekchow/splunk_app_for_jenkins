@@ -1,0 +1,32 @@
+
+    <%!
+    app_name = cherrypy.request.path_info.split('/')[3]
+
+    %>\
+    <!doctype html>
+    <html class="no-js" lang="">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        
+    </head>
+
+    <body>
+        <script src="${make_url('/config?autoload=1')}" crossorigin="use-credentials"></script>
+        <script src="${make_url('/static/js/i18n.js')}"></script>
+        <script src="${make_url('/i18ncatalog?autoload=1')}"></script>
+        <script>
+            __splunkd_partials__ = ${json_decode(splunkd)};
+        </script>
+
+    <% chunk0= "/static/app/" + app_name + "/pages/"+"commons~audit~build~configuration~health~job~node~overview~panel~testAnalysis.js" %>
+<script src="${make_url(chunk0)}"></script>
+<% chunk1= "/static/app/" + app_name + "/pages/"+"commons~audit~build~health~job~node~overview~testAnalysis.js" %>
+<script src="${make_url(chunk1)}"></script>
+<% chunk2= "/static/app/" + app_name + "/pages/"+"health.js" %>
+<script src="${make_url(chunk2)}"></script>
+<link rel="stylesheet" type="text/css" href="${make_url('/static/build/css/bootstrap-enterprise.css')}" /></body>
+</html>
